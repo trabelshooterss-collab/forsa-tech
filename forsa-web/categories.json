@@ -1,0 +1,74 @@
+[
+  {
+    "id": "motors",
+    "name": "سيارات ومحركات",
+    "icon_name": "🚗",
+    "color_hex": "#E53935"
+  },
+  {
+    "id": "properties",
+    "name": "عقارات",
+    "icon_name": "🏠",
+    "color_hex": "#1565C0"
+  },
+  {
+    "id": "mobiles-tablets",
+    "name": "موبايلات وتابلت",
+    "icon_name": "📱",
+    "color_hex": "#2E7D32"
+  },
+  {
+    "id": "electronics",
+    "name": "إلكترونيات وأجهزة",
+    "icon_name": "💻",
+    "color_hex": "#424242"
+  },
+  {
+    "id": "home-garden",
+    "name": "المنزل والحديقة",
+    "icon_name": "🛋️",
+    "color_hex": "#00897B"
+  },
+  {
+    "id": "fashion-beauty",
+    "name": "موضة وجمال",
+    "icon_name": "👗",
+    "color_hex": "#EC4899"
+  },
+  {
+    "id": "pets",
+    "name": "حيوانات أليفة",
+    "icon_name": "🐾",
+    "color_hex": "#FF6D00"
+  },
+  {
+    "id": "kids-babies",
+    "name": "مستلزمات أطفال",
+    "icon_name": "🧸",
+    "color_hex": "#AB47BC"
+  },
+  {
+    "id": "hobbies-sport",
+    "name": "هوايات ورياضة",
+    "icon_name": "⚽",
+    "color_hex": "#FFC107"
+  },
+  {
+    "id": "jobs",
+    "name": "وظائف خالية",
+    "icon_name": "💼",
+    "color_hex": "#3F51B5"
+  },
+  {
+    "id": "services",
+    "name": "خدمات",
+    "icon_name": "🛠️",
+    "color_hex": "#607D8B"
+  },
+  {
+    "id": "business-industrial",
+    "name": "شركات وصناعة",
+    "icon_name": "🏭",
+    "color_hex": "#455A64"
+  }
+]

@@ -1,0 +1,36 @@
+.cat-tile {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+}
+
+.cat-tile:hover {
+    transform: translateY(-5px);
+    border-color: var(--red);
+    background: var(--red-soft);
+    color: var(--red);
+}
+
+.dropzone {
+    border: 2px dashed var(--border);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.dropzone:hover {
+    border-color: var(--red);
+    background: var(--red-soft);
+}
+
+.fg {
+    margin-bottom: 20px;
+}
+
+.fg label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: .85rem;
+}

@@ -1,0 +1,196 @@
+import { useContext, useState } from 'react'
+import { AuthContext } from '../context/AuthContext'
+import { insforge } from '../lib/insforge'
+
+export default function LoginPage() {
+    const { login, loginMock } = useContext(AuthContext)
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [loading, setLoading] = useState(false)
+    const [showPassword, setShowPassword] = useState(false)
+
+    const handleEmailLogin = async (e) => {
+        e.preventDefault()
+        if (!email || !password) return alert('يرجى إدخال البريد الإلكتروني وكلمة المرور')
+
+        setLoading(true)
+        try {
+            await login(email, password)
+            window.location.href = '/'
+        } catch (error) {
+            alert('فشل تسجيل الدخول: ' + error.message)
+        } finally {
+            setLoading(false)
+        }
+    }
+
+    const handleGoogleLogin = async () => {
+        setLoading(true)
+        try {
+            const { error } = await insforge.auth.signInWithOAuth({
+                provider: 'google',
+                options: {
+                    redirectTo: window.location.origin
+                }
+            })
+            if (error) throw error
+        } catch (error) {
+            alert('فشل تسجيل الدخول عبر Google: ' + error.message)
+        } finally {
+            setLoading(false)
+        }
+    }
+
+    const handleFacebookLogin = async () => {
+        setLoading(true)
+        try {
+            const { error } = await insforge.auth.signInWithOAuth({
+                provider: 'facebook',
+                options: {
+                    redirectTo: window.location.origin
+                }
+            })
+            if (error) throw error
+        } catch (error) {
+            alert('فشل تسجيل الدخول عبر Facebook: ' + error.message)
+        } finally {
+            setLoading(false)
+        }
+    }
+
+    const handleQuickLogin = (e) => {
+        e.preventDefault()
+        if (!email) return alert('يرجى إدخال البريد الإلكتروني')
+        setLoading(true)
+        setTimeout(() => {
+            loginMock(email);
+            setLoading(false);
+            window.location.href = '/';
+        }, 800)
+    }
+
+    return (
+        <div className="login-wrap">
+            <div className="login-card glass">
+                <div className="lc-logo">⚡</div>
+                <h1>مرحباً بك في فرصة-تك</h1>
+                <p className="lc-sub">اختر طريقة تسجيل الدخول المناسبة لك 🚀</p>
+
+                {/* Social Login Buttons */}
+                <div style={{ display: 'flex', gap: 10, marginBottom: 20 }}>
+                    <button 
+                        className="social-btn google-btn"
+                        onClick={handleGoogleLogin}
+                        disabled={loading}
+                        style={{ flex: 1, padding: 12, borderRadius: 8, border: '1px solid var(--border)', background: '#fff', color: '#333', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontSize: '0.9rem', fontWeight: 600 }}
+                    >
+                        <svg width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                        Google
+                    </button>
+                    <button 
+                        className="social-btn facebook-btn"
+                        onClick={handleFacebookLogin}
+                        disabled={loading}
+                        style={{ flex: 1, padding: 12, borderRadius: 8, border: '1px solid var(--border)', background: '#1877F2', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontSize: '0.9rem', fontWeight: 600 }}
+                    >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                        Facebook
+                    </button>
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, margin: '20px 0', color: 'var(--text-3)' }}>
+                    <div style={{ flex: 1, height: 1, background: 'var(--border)' }}></div>
+                    <span style={{ fontSize: '0.8rem' }}>أو</span>
+                    <div style={{ flex: 1, height: 1, background: 'var(--border)' }}></div>
+                </div>
+
+                {/* Email Login Form */}
+                <form className="lc-form" onSubmit={handleEmailLogin}>
+                    <div className="fg" style={{ textAlign: 'right' }}>
+                        <label>البريد الإلكتروني</label>
+                        <input
+                            className="finput"
+                            type="email"
+                            placeholder="name@example.com"
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
+                            style={{ direction: 'ltr', textAlign: 'center' }}
+                            required
+                        />
+                    </div>
+
+                    <div className="fg" style={{ textAlign: 'right', marginTop: 15 }}>
+                        <label>كلمة المرور</label>
+                        <div style={{ position: 'relative' }}>
+                            <input
+                                className="finput"
+                                type={showPassword ? 'text' : 'password'}
+                                placeholder="••••••••"
+                                value={password}
+                                onChange={e => setPassword(e.target.value)}
+                                style={{ direction: 'ltr', textAlign: 'center', paddingRight: 40 }}
+                                required
+                            />
+                            <button
+                                type="button"
+                                onClick={() => setShowPassword(!showPassword)}
+                                style={{ position: 'absolute', right: 10, top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.2rem' }}
+                            >
+                                {showPassword ? '👁️' : '👁️‍🗨️'}
+                            </button>
+                        </div>
+                    </div>
+
+                    <div style={{ textAlign: 'left', marginTop: 10 }}>
+                        <button type="button" style={{ background: 'none', border: 'none', color: 'var(--red)', fontSize: '0.8rem', cursor: 'pointer' }}>
+                            نسيت كلمة المرور؟
+                        </button>
+                    </div>
+
+                    <button type="submit" className="lc-btn" disabled={loading} style={{ marginTop: 20 }}>
+                        {loading ? <span className="spinner" /> : 'تسجيل الدخول ←'}
+                    </button>
+                </form>
+
+                {/* Demo Mode */}
+                <div style={{ marginTop: 20, padding: 15, background: 'rgba(229, 57, 53, 0.05)', borderRadius: 8, border: '1px solid var(--red-glow)' }}>
+                    <p style={{ fontSize: '.7rem', color: 'var(--text-3)', textAlign: 'center', marginBottom: 10 }}>
+                        * وضع العرض التجريبي: الدخول السريع بالبريد فقط
+                    </p>
+                    <form onSubmit={handleQuickLogin}>
+                        <div className="fg" style={{ textAlign: 'right' }}>
+                            <input
+                                className="finput"
+                                type="email"
+                                placeholder="أدخل بريدك للدخول السريع"
+                                value={email}
+                                onChange={e => setEmail(e.target.value)}
+                                style={{ direction: 'ltr', textAlign: 'center', fontSize: '0.8rem', padding: 10 }}
+                            />
+                        </div>
+                        <button type="submit" className="lc-btn" disabled={loading} style={{ marginTop: 10, fontSize: '0.8rem', padding: 12 }}>
+                            {loading ? <span className="spinner" /> : 'دخول سريع للمنصة ←'}
+                        </button>
+                    </form>
+                </div>
+
+                {/* Sign Up Link */}
+                <div style={{ marginTop: 20, textAlign: 'center' }}>
+                    <p style={{ fontSize: '0.8rem', color: 'var(--text-2)' }}>
+                        ليس لديك حساب؟ 
+                        <button style={{ background: 'none', border: 'none', color: 'var(--red)', fontWeight: 700, cursor: 'pointer' }}>
+                            سجل الآن مجاناً
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    )
+}

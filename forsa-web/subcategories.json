@@ -1,0 +1,899 @@
+[
+  {
+    "id": "used-cars",
+    "category_id": "motors",
+    "name": "سيارات مستعملة"
+  },
+  {
+    "id": "new-cars",
+    "category_id": "motors",
+    "name": "سيارات جديدة"
+  },
+  {
+    "id": "motorcycles",
+    "category_id": "motors",
+    "name": "دراجات نارية"
+  },
+  {
+    "id": "heavy-trucks",
+    "category_id": "motors",
+    "name": "نقل ثقيل وباصات",
+    "icon_name": "🚛"
+  },
+  {
+    "id": "boats",
+    "category_id": "motors",
+    "name": "قوارب ويخوت",
+    "icon_name": "🛥️"
+  },
+  {
+    "id": "parts",
+    "category_id": "motors",
+    "name": "قطع غيار واكسسوارات",
+    "icon_name": "🔧"
+  },
+  {
+    "id": "plates",
+    "category_id": "motors",
+    "name": "لوحات مميزة",
+    "icon_name": "🔢"
+  },
+  {
+    "id": "sale-apartments",
+    "category_id": "properties",
+    "name": "شقق للبيع",
+    "icon_name": "🏙️"
+  },
+  {
+    "id": "rent-apartments",
+    "category_id": "properties",
+    "name": "شقق للإيجار",
+    "icon_name": "🔑"
+  },
+  {
+    "id": "villas-sale",
+    "category_id": "properties",
+    "name": "فلل وقصور للبيع",
+    "icon_name": "🏰"
+  },
+  {
+    "id": "villas-rent",
+    "category_id": "properties",
+    "name": "فلل للإيجار",
+    "icon_name": "🏡"
+  },
+  {
+    "id": "commercial",
+    "category_id": "properties",
+    "name": "عقارات تجارية",
+    "icon_name": "🏢"
+  },
+  {
+    "id": "lands",
+    "category_id": "properties",
+    "name": "أراضي",
+    "icon_name": "🏜️"
+  },
+  {
+    "id": "chalets",
+    "category_id": "properties",
+    "name": "شاليهات ومصايف",
+    "icon_name": "🏖️"
+  },
+  {
+    "id": "buildings",
+    "category_id": "properties",
+    "name": "عمارات بالكامل",
+    "icon_name": "🏗️"
+  },
+  {
+    "id": "foreign-prop",
+    "category_id": "properties",
+    "name": "عقارات أجنبية",
+    "icon_name": "🌍"
+  },
+  {
+    "id": "mobiles",
+    "category_id": "mobiles-tablets",
+    "name": "موبايلات",
+    "icon_name": "📱"
+  },
+  {
+    "id": "tablets",
+    "category_id": "mobiles-tablets",
+    "name": "تابلت",
+    "icon_name": "📠"
+  },
+  {
+    "id": "accessories",
+    "category_id": "mobiles-tablets",
+    "name": "اكسسوارات موبايل",
+    "icon_name": "🎧"
+  },
+  {
+    "id": "vip-numbers",
+    "category_id": "mobiles-tablets",
+    "name": "أرقام مميزة",
+    "icon_name": "💎"
+  },
+  {
+    "id": "laptops",
+    "category_id": "electronics",
+    "name": "لابتوب وكمبيوتر",
+    "icon_name": "💻"
+  },
+  {
+    "id": "tvs",
+    "category_id": "electronics",
+    "name": "تلفزيونات وصوتيات",
+    "icon_name": "📺"
+  },
+  {
+    "id": "appliances",
+    "category_id": "electronics",
+    "name": "أجهزة منزلية",
+    "icon_name": "🧊"
+  },
+  {
+    "id": "gaming",
+    "category_id": "electronics",
+    "name": "ألعاب فيديو وكونسول",
+    "icon_name": "🎮"
+  },
+  {
+    "id": "cameras",
+    "category_id": "electronics",
+    "name": "كاميرات وتصوير",
+    "icon_name": "📸"
+  },
+  {
+    "id": "furniture",
+    "category_id": "home-garden",
+    "name": "أثاث منزلي",
+    "icon_name": "🛋️"
+  },
+  {
+    "id": "decoration",
+    "category_id": "home-garden",
+    "name": "ديكور وإضاءة",
+    "icon_name": "💡"
+  },
+  {
+    "id": "kitchen-tools",
+    "category_id": "home-garden",
+    "name": "أدوات مطبخ",
+    "icon_name": "🍽️"
+  },
+  {
+    "id": "garden",
+    "category_id": "home-garden",
+    "name": "حديقة ومناطق خارجية",
+    "icon_name": "🌻"
+  },
+  {
+    "id": "bathroom",
+    "category_id": "home-garden",
+    "name": "أثاث حمام",
+    "icon_name": "🚿"
+  },
+  {
+    "id": "carpets",
+    "category_id": "home-garden",
+    "name": "سجاد ومفروشات",
+    "icon_name": "🧶"
+  },
+  {
+    "id": "womens-clothing",
+    "category_id": "fashion-beauty",
+    "name": "ملابس حريمي",
+    "icon_name": "👚"
+  },
+  {
+    "id": "mens-clothing",
+    "category_id": "fashion-beauty",
+    "name": "ملابس رجالي",
+    "icon_name": "👔"
+  },
+  {
+    "id": "shoes",
+    "category_id": "fashion-beauty",
+    "name": "أحذية",
+    "icon_name": "👠"
+  },
+  {
+    "id": "bags",
+    "category_id": "fashion-beauty",
+    "name": "حقائب وشنط",
+    "icon_name": "👜"
+  },
+  {
+    "id": "watches-jewelry",
+    "category_id": "fashion-beauty",
+    "name": "ساعات ومجوهرات",
+    "icon_name": "💍"
+  },
+  {
+    "id": "beauty",
+    "category_id": "fashion-beauty",
+    "name": "صحة وجمال",
+    "icon_name": "💄"
+  },
+  {
+    "id": "wedding",
+    "category_id": "fashion-beauty",
+    "name": "لوازم أفراح",
+    "icon_name": "👰"
+  },
+  {
+    "id": "cats",
+    "category_id": "pets",
+    "name": "قطط",
+    "icon_name": "🐱"
+  },
+  {
+    "id": "dogs",
+    "category_id": "pets",
+    "name": "كلاب",
+    "icon_name": "🐶"
+  },
+  {
+    "id": "birds",
+    "category_id": "pets",
+    "name": "طيور",
+    "icon_name": "🐦"
+  },
+  {
+    "id": "fish",
+    "category_id": "pets",
+    "name": "أسماك وزينة",
+    "icon_name": "🐠"
+  },
+  {
+    "id": "pet-supplies",
+    "category_id": "pets",
+    "name": "مستلزمات حيوانات",
+    "icon_name": "🦴"
+  },
+  {
+    "id": "farm-animals",
+    "category_id": "pets",
+    "name": "حيوانات مزارع",
+    "icon_name": "🐮"
+  },
+  {
+    "id": "kids-clothing",
+    "category_id": "kids-babies",
+    "name": "ملابس أطفال",
+    "icon_name": "👕"
+  },
+  {
+    "id": "baby-gear",
+    "category_id": "kids-babies",
+    "name": "مستلزمات أطفال ورضع",
+    "icon_name": "🍼"
+  },
+  {
+    "id": "toys",
+    "category_id": "kids-babies",
+    "name": "ألعاب",
+    "icon_name": "🧩"
+  },
+  {
+    "id": "strollers",
+    "category_id": "kids-babies",
+    "name": "عربات ومقاعد",
+    "icon_name": "🛒"
+  },
+  {
+    "id": "sports-equip",
+    "category_id": "hobbies-sport",
+    "name": "معدات رياضية",
+    "icon_name": "🏋️"
+  },
+  {
+    "id": "bicycles",
+    "category_id": "hobbies-sport",
+    "name": "دراجات",
+    "icon_name": "🚲"
+  },
+  {
+    "id": "books",
+    "category_id": "hobbies-sport",
+    "name": "كتب ومجلات",
+    "icon_name": "📚"
+  },
+  {
+    "id": "musical-instruments",
+    "category_id": "hobbies-sport",
+    "name": "آلات موسيقية",
+    "icon_name": "🎸"
+  },
+  {
+    "id": "antiques",
+    "category_id": "hobbies-sport",
+    "name": "تحف ومقتنيات",
+    "icon_name": "🏺"
+  },
+  {
+    "id": "tickets",
+    "category_id": "hobbies-sport",
+    "name": "تذاكر وقسائم",
+    "icon_name": "🎟️"
+  },
+  {
+    "id": "job-workers",
+    "category_id": "jobs",
+    "name": "عمال",
+    "icon_name": "👷"
+  },
+  {
+    "id": "job-craftsmen",
+    "category_id": "jobs",
+    "name": "حرفيين",
+    "icon_name": "🔨"
+  },
+  {
+    "id": "job-contracting",
+    "category_id": "jobs",
+    "name": "مقاولات وبناء",
+    "icon_name": "🏗️"
+  },
+  {
+    "id": "job-plumbing",
+    "category_id": "jobs",
+    "name": "سباكة",
+    "icon_name": "🔧"
+  },
+  {
+    "id": "job-electrical",
+    "category_id": "jobs",
+    "name": "كهربائي",
+    "icon_name": "⚡"
+  },
+  {
+    "id": "job-painting",
+    "category_id": "jobs",
+    "name": "نقاشة ودهانات",
+    "icon_name": "🎨"
+  },
+  {
+    "id": "job-welding",
+    "category_id": "jobs",
+    "name": "لحام وحدادة",
+    "icon_name": "🔥"
+  },
+  {
+    "id": "job-carpentry",
+    "category_id": "jobs",
+    "name": "نجارة",
+    "icon_name": "🪚"
+  },
+  {
+    "id": "job-tiling",
+    "category_id": "jobs",
+    "name": "سيراميك وتركيبات",
+    "icon_name": "🧱"
+  },
+  {
+    "id": "job-hvac",
+    "category_id": "jobs",
+    "name": "تكييف وتبريد",
+    "icon_name": "❄️"
+  },
+  {
+    "id": "job-landscaping",
+    "category_id": "jobs",
+    "name": "حدائق ومناظر طبيعية",
+    "icon_name": "🌳"
+  },
+  {
+    "id": "job-security",
+    "category_id": "jobs",
+    "name": "حراسة وأمن",
+    "icon_name": "👮"
+  },
+  {
+    "id": "job-driver",
+    "category_id": "jobs",
+    "name": "سائق",
+    "icon_name": "🚗"
+  },
+  {
+    "id": "job-delivery",
+    "category_id": "jobs",
+    "name": "دليفري وتوصيل",
+    "icon_name": "🛵"
+  },
+  {
+    "id": "job-tourism-rest",
+    "category_id": "jobs",
+    "name": "فنادق ومطاعم",
+    "icon_name": "🍽️"
+  },
+  {
+    "id": "job-chef",
+    "category_id": "jobs",
+    "name": "طباخ وشيف",
+    "icon_name": "👨‍🍳"
+  },
+  {
+    "id": "job-domestic",
+    "category_id": "jobs",
+    "name": "عمالة منزلية",
+    "icon_name": "🧹"
+  },
+  {
+    "id": "job-cleaning",
+    "category_id": "jobs",
+    "name": "عمال نظافة",
+    "icon_name": "🧽"
+  },
+  {
+    "id": "job-nursery",
+    "category_id": "jobs",
+    "name": "حضانة ورعاية أطفال",
+    "icon_name": "🧒"
+  },
+  {
+    "id": "job-beauty",
+    "category_id": "jobs",
+    "name": "تجميل وكوافير",
+    "icon_name": "💇"
+  },
+  {
+    "id": "job-fitness",
+    "category_id": "jobs",
+    "name": "مدرب لياقة ورياضة",
+    "icon_name": "💪"
+  },
+  {
+    "id": "job-management",
+    "category_id": "jobs",
+    "name": "إدارة",
+    "icon_name": "📊"
+  },
+  {
+    "id": "job-accounting",
+    "category_id": "jobs",
+    "name": "محاسبة ومالية",
+    "icon_name": "💰"
+  },
+  {
+    "id": "job-secretarial",
+    "category_id": "jobs",
+    "name": "سكرتارية وإدارة مكتبية",
+    "icon_name": "📝"
+  },
+  {
+    "id": "job-hr",
+    "category_id": "jobs",
+    "name": "موارد بشرية",
+    "icon_name": "👥"
+  },
+  {
+    "id": "job-data-entry",
+    "category_id": "jobs",
+    "name": "إدخال بيانات",
+    "icon_name": "⌨️"
+  },
+  {
+    "id": "job-cust-service",
+    "category_id": "jobs",
+    "name": "خدمة عملاء وكول سنتر",
+    "icon_name": "🎧"
+  },
+  {
+    "id": "job-sales-marketing",
+    "category_id": "jobs",
+    "name": "مبيعات وتسويق",
+    "icon_name": "📈"
+  },
+  {
+    "id": "job-pr",
+    "category_id": "jobs",
+    "name": "علاقات عامة وإعلام",
+    "icon_name": "📢"
+  },
+  {
+    "id": "job-programming",
+    "category_id": "jobs",
+    "name": "برمجة وتطوير",
+    "icon_name": "💻"
+  },
+  {
+    "id": "job-web-design",
+    "category_id": "jobs",
+    "name": "تصميم مواقع وتطبيقات",
+    "icon_name": "🌐"
+  },
+  {
+    "id": "job-it",
+    "category_id": "jobs",
+    "name": "شبكات وIT",
+    "icon_name": "🖥️"
+  },
+  {
+    "id": "job-design",
+    "category_id": "jobs",
+    "name": "تصميم جرافيك",
+    "icon_name": "🎨"
+  },
+  {
+    "id": "job-montage",
+    "category_id": "jobs",
+    "name": "مونتاج وإنتاج فيديو",
+    "icon_name": "🎬"
+  },
+  {
+    "id": "job-engineering",
+    "category_id": "jobs",
+    "name": "هندسة",
+    "icon_name": "🏗️"
+  },
+  {
+    "id": "job-medical",
+    "category_id": "jobs",
+    "name": "طب وتمريض وصيدلة",
+    "icon_name": "🩺"
+  },
+  {
+    "id": "job-teaching",
+    "category_id": "jobs",
+    "name": "تعليم وتدريس",
+    "icon_name": "🎓"
+  },
+  {
+    "id": "job-legal",
+    "category_id": "jobs",
+    "name": "محاماة وقانون",
+    "icon_name": "⚖️"
+  },
+  {
+    "id": "job-translator",
+    "category_id": "jobs",
+    "name": "ترجمة ولغات",
+    "icon_name": "🗣️"
+  },
+  {
+    "id": "job-tailors",
+    "category_id": "jobs",
+    "name": "خياطة وتفصيل",
+    "icon_name": "🧵"
+  },
+  {
+    "id": "job-employees",
+    "category_id": "jobs",
+    "name": "موظفين عموم",
+    "icon_name": "💼"
+  },
+  {
+    "id": "job-technician",
+    "category_id": "jobs",
+    "name": "فنيين ومعدات",
+    "icon_name": "🔧"
+  },
+  {
+    "id": "job-fine-arts",
+    "category_id": "jobs",
+    "name": "فنون وإبداع",
+    "icon_name": "🎭"
+  },
+  {
+    "id": "job-editors",
+    "category_id": "jobs",
+    "name": "تحرير وكتابة محتوى",
+    "icon_name": "✍️"
+  },
+  {
+    "id": "job-fashion",
+    "category_id": "jobs",
+    "name": "أزياء وموضة",
+    "icon_name": "👗"
+  },
+  {
+    "id": "job-partnership",
+    "category_id": "jobs",
+    "name": "شراكة واستثمار",
+    "icon_name": "🤝"
+  },
+  {
+    "id": "job-travel",
+    "category_id": "jobs",
+    "name": "سياحة وطيران",
+    "icon_name": "✈️"
+  },
+  {
+    "id": "job-other",
+    "category_id": "jobs",
+    "name": "وظائف أخرى",
+    "icon_name": "📋"
+  },
+  {
+    "id": "serv-plumbing",
+    "category_id": "services",
+    "name": "سباكة",
+    "icon_name": "🔧"
+  },
+  {
+    "id": "serv-electrical",
+    "category_id": "services",
+    "name": "كهرباء",
+    "icon_name": "⚡"
+  },
+  {
+    "id": "serv-ac",
+    "category_id": "services",
+    "name": "تكييفات وتبريد",
+    "icon_name": "❄️"
+  },
+  {
+    "id": "serv-appliance",
+    "category_id": "services",
+    "name": "صيانة أجهزة منزلية",
+    "icon_name": "🔌"
+  },
+  {
+    "id": "serv-electronics",
+    "category_id": "services",
+    "name": "تصليح موبايلات وإلكترونيات",
+    "icon_name": "📱"
+  },
+  {
+    "id": "serv-satellite",
+    "category_id": "services",
+    "name": "دش وستالايت وكاميرات",
+    "icon_name": "📡"
+  },
+  {
+    "id": "serv-contracting",
+    "category_id": "services",
+    "name": "مقاولات وتشطيبات",
+    "icon_name": "🏗️"
+  },
+  {
+    "id": "serv-painting",
+    "category_id": "services",
+    "name": "دهانات وديكور",
+    "icon_name": "🎨"
+  },
+  {
+    "id": "serv-carpentry",
+    "category_id": "services",
+    "name": "نجارة وأخشاب",
+    "icon_name": "🪚"
+  },
+  {
+    "id": "serv-aluminum",
+    "category_id": "services",
+    "name": "ألوميتال وزجاج",
+    "icon_name": "🪟"
+  },
+  {
+    "id": "serv-tiles",
+    "category_id": "services",
+    "name": "سيراميك ورخام",
+    "icon_name": "🧱"
+  },
+  {
+    "id": "serv-welding",
+    "category_id": "services",
+    "name": "حدادة ولحام",
+    "icon_name": "🔥"
+  },
+  {
+    "id": "serv-cleaning",
+    "category_id": "services",
+    "name": "تنظيف منازل وفلل",
+    "icon_name": "🧹"
+  },
+  {
+    "id": "serv-pest",
+    "category_id": "services",
+    "name": "مكافحة حشرات",
+    "icon_name": "🐛"
+  },
+  {
+    "id": "serv-laundry",
+    "category_id": "services",
+    "name": "غسيل وكي ملابس",
+    "icon_name": "👕"
+  },
+  {
+    "id": "serv-gardening",
+    "category_id": "services",
+    "name": "حدائق وزراعة",
+    "icon_name": "🌿"
+  },
+  {
+    "id": "serv-moving",
+    "category_id": "services",
+    "name": "نقل عفش",
+    "icon_name": "🚚"
+  },
+  {
+    "id": "serv-shipping",
+    "category_id": "services",
+    "name": "شحن وتوصيل",
+    "icon_name": "📦"
+  },
+  {
+    "id": "serv-storage",
+    "category_id": "services",
+    "name": "تخزين ومستودعات",
+    "icon_name": "🏭"
+  },
+  {
+    "id": "serv-cars",
+    "category_id": "services",
+    "name": "ميكانيكا سيارات",
+    "icon_name": "🚗"
+  },
+  {
+    "id": "serv-tires",
+    "category_id": "services",
+    "name": "كاوتش وبطاريات",
+    "icon_name": "🛞"
+  },
+  {
+    "id": "serv-car-wash",
+    "category_id": "services",
+    "name": "غسيل وتلميع سيارات",
+    "icon_name": "🚿"
+  },
+  {
+    "id": "serv-towing",
+    "category_id": "services",
+    "name": "سطحة وونش",
+    "icon_name": "🚛"
+  },
+  {
+    "id": "serv-teaching",
+    "category_id": "services",
+    "name": "دروس خصوصية",
+    "icon_name": "📚"
+  },
+  {
+    "id": "serv-training",
+    "category_id": "services",
+    "name": "تدريب وكورسات",
+    "icon_name": "🎯"
+  },
+  {
+    "id": "serv-languages",
+    "category_id": "services",
+    "name": "تعليم لغات",
+    "icon_name": "🗣️"
+  },
+  {
+    "id": "serv-beauty",
+    "category_id": "services",
+    "name": "تجميل وكوافير",
+    "icon_name": "💅"
+  },
+  {
+    "id": "serv-health",
+    "category_id": "services",
+    "name": "تمريض منزلي",
+    "icon_name": "💉"
+  },
+  {
+    "id": "serv-therapy",
+    "category_id": "services",
+    "name": "علاج طبيعي وتأهيل",
+    "icon_name": "🧑‍⚕️"
+  },
+  {
+    "id": "serv-design",
+    "category_id": "services",
+    "name": "تصميم وطباعة",
+    "icon_name": "🖨️"
+  },
+  {
+    "id": "serv-programming",
+    "category_id": "services",
+    "name": "برمجة وتصميم مواقع",
+    "icon_name": "💻"
+  },
+  {
+    "id": "serv-photography",
+    "category_id": "services",
+    "name": "تصوير فوتو وفيديو",
+    "icon_name": "📸"
+  },
+  {
+    "id": "serv-advertising",
+    "category_id": "services",
+    "name": "دعاية وإعلان",
+    "icon_name": "📢"
+  },
+  {
+    "id": "serv-parties",
+    "category_id": "services",
+    "name": "حفلات ومناسبات",
+    "icon_name": "🎉"
+  },
+  {
+    "id": "serv-food",
+    "category_id": "services",
+    "name": "طعام منزلي وبوفيه",
+    "icon_name": "🍲"
+  },
+  {
+    "id": "serv-catering",
+    "category_id": "services",
+    "name": "كاترينج وضيافة",
+    "icon_name": "☕"
+  },
+  {
+    "id": "serv-legal",
+    "category_id": "services",
+    "name": "استشارات قانونية",
+    "icon_name": "⚖️"
+  },
+  {
+    "id": "serv-financial",
+    "category_id": "services",
+    "name": "محاسبة وضرائب",
+    "icon_name": "📊"
+  },
+  {
+    "id": "serv-insurance",
+    "category_id": "services",
+    "name": "تأمين",
+    "icon_name": "🛡️"
+  },
+  {
+    "id": "serv-pets",
+    "category_id": "services",
+    "name": "رعاية حيوانات",
+    "icon_name": "🐾"
+  },
+  {
+    "id": "serv-vet",
+    "category_id": "services",
+    "name": "طبيب بيطري",
+    "icon_name": "🐕"
+  },
+  {
+    "id": "serv-travel",
+    "category_id": "services",
+    "name": "حجز سفر وسياحة",
+    "icon_name": "✈️"
+  },
+  {
+    "id": "serv-other",
+    "category_id": "services",
+    "name": "خدمات أخرى",
+    "icon_name": "📋"
+  },
+  {
+    "id": "factory-equip",
+    "category_id": "business-industrial",
+    "name": "معدات مصانع",
+    "icon_name": "⚙️"
+  },
+  {
+    "id": "restaurant-equip",
+    "category_id": "business-industrial",
+    "name": "معدات مطاعم",
+    "icon_name": "🍔"
+  },
+  {
+    "id": "medical-equip",
+    "category_id": "business-industrial",
+    "name": "معدات طبية",
+    "icon_name": "🩺"
+  },
+  {
+    "id": "heavy-machinery",
+    "category_id": "business-industrial",
+    "name": "معدات ثقيلة",
+    "icon_name": "🚜"
+  },
+  {
+    "id": "shop-liquidation",
+    "category_id": "business-industrial",
+    "name": "تصفية محلات وبضائع",
+    "icon_name": "📦"
+  }
+]

@@ -1,0 +1,22 @@
+# معلومات اتصال قاعدة بيانات InsForge
+
+## اتصال PostgreSQL المباشر
+Host: 63y9pesi.eu-central.database.insforge.app
+Port: 5432
+Database: insforge
+Username: postgres
+Password: dc8545f083737db342a10fa8415969e3
+SSL Mode: require
+
+## سلسلة الاتصال الكاملة
+postgresql://postgres:dc8545f083737db342a10fa8415969e3@63y9pesi.eu-central.database.insforge.app:5432/insforge?sslmode=require
+
+## ملاحظات مهمة:
+1. هذه المعلومات حساسة جداً ويجب عدم مشاركتها
+2. يُنصح باستخدام متغيرات البيئة لتخزين هذه المعلومات
+3. لا تقم بوضع هذه المعلومات في الكود المصدري أو في المستودعات العامة
+
+## استخدام قاعدة البيانات:
+- يمكنك استخدام هذه المعلومات للاتصال بقاعدة البيانات مباشرة
+- يُنصح باستخدام أدوات مثل pgAdmin أو DBeaver للإدارة
+- تأكد من استخدام SSL للاتصال الآمن

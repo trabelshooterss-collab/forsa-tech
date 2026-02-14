@@ -1,0 +1,15 @@
+{
+  "project_name": "Forsa-Tech",
+  "tech_stack": {
+    "framework": "Flutter",
+    "state_management": "BLoC",
+    "backend": "Firebase"
+  },
+  "current_status": "Starting Refactoring to BLoC & Clean Architecture",
+  "last_update": "2026-02-11",
+  "architecture_plan": {
+    "layers": ["data", "domain", "presentation"],
+    "features": ["auth", "ads_listing", "ad_creation", "chat", "profile"]
+  },
+  "notes": "User wants dynamic linking between creation and listing. Business model includes B2B profiles and premium features."
+}
